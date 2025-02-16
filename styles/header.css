@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    overflow-x: hidden;
+}
+
+html, body {
+    background-color: white;
+    cursor: default;
+    width: 100vw;
+}
+
+header {
+    position: absolute;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    padding: 0.5%;
+    padding-left: 1.35%;
+    padding-top: 1%;
+    padding-right: 1.35%;
+    cursor: default;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+/* header a {
+    display: inline-block;
+} */
+
+/* .logo-container {
+    flex-shrink: 100;
+    display: flex; 
+    align-items: center; 
+    
+
+    background-color: aqua;
+    
+} */
+
+.logo {
+    width: 2vw; /* Maintain your existing size */
+    /* height: 1%; */
+    cursor: pointer;
+}
+
+
+.name {
+    /* font-family: Helvetica;
+    font-size: 2.5rem;
+    letter-spacing: -0.2rem;
+    text-align: center;
+    position: relative;
+    width: 100%; */
+
+
+    font-family: Helvetica;
+    letter-spacing: -0.2rem;
+    font-size: clamp(42px, 3vw, 150px);
+    
+    text-align: center;
+
+    position: absolute;
+    
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact {
+    font-family: Helvetica;
+    font-size: 0.8rem;
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.email > a {
+    color: black;
+}
+
+.link {
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    margin: 1.5vw;
+}

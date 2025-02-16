@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding/borders don't affect width */
+    overflow-x: hidden;
+}
+
+html, body {
+    
+    cursor: default;
+    width: 100vw;
+
+    font-family: Helvetica;
+    padding-bottom: 10vh;
+   
+}
+
+canvas {
+    cursor: default;
+}
+
+h2 {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: clamp(12pt, 5vw, 24pt);
+}
+
+p {
+    font-family: Helvetica;
+    font-size: 1.2rem;
+    
+}
+
+span {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.cargo-book {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: clamp(20px,2.5vw,75px); 
+    /* padding-left: clamp(16px, 15vw, 120px); */
+    /* padding-right: clamp(16px, 15vw, 120px); */
+    padding-top: clamp(16px, 15vh, 150px);
+}
+
+.spreads {
+    width: clamp(325px, 60vw, 700px);
+    min-width: 325px;
+    /* padding-bottom: clamp(20px, 1vw, 40px); */
+
+    
+}
+
+.text {
+    width: clamp(250px, 30vw, 450px);
+    min-width: 250px;
+}
+
+.info {
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.4;
+}
+
+#body {
+    padding-top: 5vh;
+    
+    font-size: clamp(4pt, 2vw, 12pt);
+
+    line-height: 1.6;
+}
+
+.book-function {
+    display: block;
+    /* width: clamp(250px, 40vw, 700px); */
+    /* min-width: 350px; */
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-l, .nav-r {
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+
+    /* background-color: blue; */
+}
+
+@media (max-width: 850px) {
+    .cargo-book {
+        display: flex; /* Switch to block when screen is small */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .text {
+        width: clamp(250px, 85vw, 450px);
+        min-width: 250px;
+    }
+}
